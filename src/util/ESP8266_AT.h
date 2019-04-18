@@ -42,7 +42,7 @@ const char ESP8266_UART[] = "+UART"; // UART configuration
 // WiFi Functions //
 ////////////////////
 const char ESP8266_WIFI_MODE[] = "+CWMODE"; // WiFi mode (sta/AP/sta+AP)
-const char ESP8266_CONNECT_AP[] = "+CWJAP"; // Connect to AP
+const char ESP8266_CONNECT_AP[] = "+CWJAP_CUR"; // Connect to AP
 //!const char ESP8266_LIST_AP[] = "+CWLAP"; // List available AP's
 const char ESP8266_DISCONNECT[] = "+CWQAP"; // Disconnect from AP
 //!const char ESP8266_AP_CONFIG[] = "+CWSAP"; // Set softAP configuration
@@ -54,6 +54,7 @@ const char ESP8266_GET_STA_MAC[] = "+CIPSTAMAC"; // Get MAC address of station
 //!const char ESP8266_SET_AP_MAC[] = "+CIPAPMAC"; // Set MAC address of softAP
 //!const char ESP8266_SET_STA_IP[] = "+CIPSTA"; // Set IP address of ESP8266 station
 //!const char ESP8266_SET_AP_IP[] = "+CIPAP"; // Set IP address of ESP8266 softAP
+const char ESP8266_GET_STA_IPS[] = "CIPSTA_CUR?";
 
 /////////////////////
 // TCP/IP Commands //

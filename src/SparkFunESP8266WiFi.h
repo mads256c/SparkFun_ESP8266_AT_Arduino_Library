@@ -152,6 +152,7 @@ public:
 	/////////////////////
 	int16_t status();
 	int16_t updateStatus();
+	int16_t tcpConnect(uint8_t linkID, IPAddress destination, uint16_t port, uint16_t keepAlive);
 	int16_t tcpConnect(uint8_t linkID, const char * destination, uint16_t port, uint16_t keepAlive);
 	int16_t tcpSend(uint8_t linkID, const uint8_t *buf, size_t size);
 	int16_t close(uint8_t linkID);

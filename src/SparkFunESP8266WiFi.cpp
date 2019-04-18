@@ -472,6 +472,13 @@ int16_t ESP8266Class::localMAC(char * mac)
 // TCP/IP Commands //
 /////////////////////
 
+int16_t ESP8266Class::tcpConnect(uint8_t linkID, IPAddress ip, uint16_t port, uint16_t keepAlive)
+{
+	char ipStr[17];
+	sprintf(ipStr, "%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]);
+	return tcpConnect(linkID, ipStr, port, keepAlive);
+}
+
 int16_t ESP8266Class::tcpConnect(uint8_t linkID, const char * destination, uint16_t port, uint16_t keepAlive)
 {
 	print("AT");
